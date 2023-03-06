@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Metadatos para adatparlo a los tamaños de dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadatos para posicionar la pagina-->
+    <meta name="author" content="Yanina Aquino">
+    <meta name="description" content="Pagina de Yoga - Espacio holistico"> 
+    <meta name="keywords" content="meditacion, yoga, relajacion, clases de yoga">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--Botstrap ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./recursos/logo/Logo-Agara.png" type="image/x-icon">
+    <!--Titulo de la pagina-->
+    <title>Agara | Home</title>
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="fixed-top navbar navbar-expand-md navbar-light">
+        <!--container fluid que se ajusta al 100% del ancho-->
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+            <!--Logo de la pagina-->    
+            <a class="navbar-brand" href="#">
+                <img src="./recursos/logo/Logo Agara-horizontal.png" width="150" alt="imagen del logo de la web">
+            </a>
+            <!--Elementos de la barra: links-->
+            <!--Agrego clases para centrar el contenido: d-flex justify-content-center align-items-center-->
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="./paginas/nosotros.html">Sobre Agara</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/contactanos.html">Contactanos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/clases.html">Clases de Yoga</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/blog.html"">Blog</a>
+                </li>
+        </div>
+    </div>
+    </nav>    
+
+    <!--Sección HERO-->
+    <section class="hero align-items-stretch">
+        <!--Las reglas las puedo definir en CSS o en la clase de BOOTSTRAP-->
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <h1>Bienvenidos a tu espacio holistico</h1>
+            <h2>Tu plataforma de yoga, meditación y bienestar</h2>
+        </div>
+    </section>
+
+    <!--Carrousel de imagenes y texto-->
+    <div id="carouselindex" class="carousel carousel-white slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./recursos/imagenes/carrousel1-img.jpg" class="d-block w-100 tamaño-imagen-carrousel img-fluid" alt="imagen del carrrousel index">
+            <div class="carousel-caption d-none d-md-block ">
+            <h5 class="tipografia-carrousel">CONECTA</h5>
+            <p class="tipografia-carrousel-texto">Cuerpo, mente y espíritu</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="./recursos/imagenes/carrousel2-img.jpg" class="d-block w-100 tamaño-imagen-carrousel img-fluid" alt="imagen del carrrousel index">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="tipografia-carrousel">EXPLORA</h5>
+                <p class="tipografia-carrousel-texto">Nuevos caminos de bienestar y armonía</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./recursos/imagenes/carrousel3-img.jpg" class="d-block w-100 tamaño-imagen-carrousel img-fluid" alt="imagen del carrrousel index">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="tipografia-carrousel">RELAJA</h5>
+                <p class="tipografia-carrousel-texto">Conserva tu energía</p>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselindex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselindex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        
+    <!--Cards individuales-->
+    <div class="margenes-divs">
+        <div class="container-fluid card-individual">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 texto-seccion">
+                    <h5 class="card-title">Sobre Agara</h5>
+                    <p class="card-text">Soy profesora de yoga y experta en bienestar. El yoga entró en mi vida por casualidad hace 20 años y enseñar esta disciplina se ha convertido en mi pasión y vocación. Mi objetivo es llevar el yoga al mayor número de personas posible para que haya más amor dentro de cada uno y armonía entre todos.</p>
+                    <!--Boton Leer mas-->
+                    <button class="cta">
+                        <span>
+                            <a href="./paginas/contactanos.html">Leer mas</a>
+                        </span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card card-individual-image col-md-4 col-sm-12">
+                    <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" class="img-fluid " alt="esta es una imagen de la portada de la contactanos">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Cards index-->
+    <main>
+        <div class="container-fluid">
+        <div class="conteiner-cards row row-cols-1 row-cols-md-2 g-4">
+            <!--Card sobre Agara-->
+            <div class="col">
+            <!--Div de cada CARD-->
+                <div class="card card-image">
+                    <img src="./recursos/imagenes/sobre-agara-portada.jpg" class="card-img-top img-fluid" alt="esta es una imagen de la portada de la seccion sobre agara">
+                    <div class="card-body">
+                        <h5 class="card-title">Sobre Agara</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <!--Boton Leer mas-->
+                        <button class="cta">
+                            <span>Leer más</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card contactanos-->
+            <div class="col">
+                <div class="card card-image">
+                    <img src="./recursos/imagenes/contactanos-portada.jpg" class="card-img-top img-fluid" alt="esta es una imagen de la portada de la contactanos">
+                    <div class="card-body">
+                        <h5 class="card-title">Contactanos</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <!--Boton Leer mas-->
+                        <button class="cta">
+                            <span>
+                                <a href="./paginas/contactanos.html">Leer mas</a>
+                            </span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>        
+
+            <!--Card Clases de Yoga -->
+            <div class="col">
+                <div class="card card-image">
+                    <img src="./recursos/imagenes/clases-portada.jpg" class="card-img-top img-fluid" alt="esta es una imagen de la portada de la Clases de yoga">
+                    <div class="card-body">
+                        <h5 class="card-title">Clases de Yoga</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <!--Boton Leer mas-->
+                        <button class="cta">
+                            <span>
+                                <a href="./paginas/clases.html">Leer mas</a>
+                            </span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card Blog -->
+            <div class="col">
+                <div class="card card-image">
+                    <img src="./recursos/imagenes/blog-portada.jpg" class="card-img-top img-fluid" alt="esta es una imagen de la portada de blog" >
+                    <div class="card-body">
+                        <h5 class="card-title">Blog</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <!--Boton Leer mas-->
+                        <button class="cta">
+                            <span>
+                                <a href="./paginas/blog.html">Leer mas</a>
+                            </span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!--Sobre Agara-->  
+    <section class="sobre-agara seccion-color">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce nuestra historia</h2>
+            <p class="seccion-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde suscipit pariatur maiores quae est possimus similique fugiat deserunt sint vero error molestiae ducimus perferendis atque dicta expedita enim, ab necessitatibus.
+            Iusto voluptas ad, quaerat nostrum ex, officiis natus et error cumque optio ut molestiae id sapiente ullam accusantium vitae. Aperiam consequuntur tempora quo minus laboriosam consequatur voluptate illum accusantium impedit!</p>
+        </div>
+    </section>
+
+    <!--Seccion Profesores-->
+    <section class="nuestros-profesores seccion-color-profesores">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Nuestras maestras</h2>
+        </div>
+    </section>
+    <section class="profesores seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--Profesora 1-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class="profesores-circular" src="./recursos/imagenes/Profesores/Sofia.jpg" alt="imagen-de-perfil-profesores">
+                    </div>
+                    <p class="profesores-titulo">Sofia Galerti</p>
+                    <p class="texto-profesores">
+                        Se recibió en instituto de Yoga de “Hari Om International - Escuela de Yoga y Ayurveda” y es co-fundadora de Agara.
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html" role="button">Leer más</a>
+                    </div>
+                </div>
+
+                <!--Profesora 2-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class="profesores-circular" src="./recursos/imagenes/Profesores/Coti.jpg" alt="imagen-de-perfil-profesores">
+                    </div>
+                    <p class="profesores-titulo">Constanza Albarracin</p>
+                    <p class="texto-profesores">
+                        Se recibió en instituto de Yoga de “Hatha Yoga en Escuela Flor de Vida” y es co-fundadora de Agara.
+
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html" role="button">Leer más</a>
+                    </div>
+
+                </div>
+                <!--Profesora 3-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class=" profesores-circular" src="./recursos/imagenes/Profesores/Marian.jpg" alt="imagen-de-perfil-profesores">
+                    </div>
+                    <p class="profesores-titulo">Mariana </p>
+                    <p class="texto-profesores">
+                        Se recibió de Licenciada en Kinesiologia y Fisiatria (UBA) especializada en reeducación postural global, y disfunciones craneo-mandibular y es co-fundadora de Agara. 
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html" role="button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Otra seccion-->
+    <section class="proyectos-recientes seccion-color-profesores d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+        <h3 class="seccion-descripcion">Esta es una descripcion de algun texto random</h3>
+        <!--Galeria de proyectos-->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!--Proyecto 1-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 2-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 3-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 4-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+                <!--Proyecto 5-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <!--Proyecto 6-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Sobre Agara/Portada-SobreAgara.jpg" alt="proyecto1">
+                        <div class="overlay"> 
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+        <div class="boton-ver-mas">
+            <a class="btn" href="./paginas/blog.html" role="button">
+                Ver más
+                <i class="bi bi-arrow-right icono-boton"></i>
+            </a>
+        </div>    
+    </section>
+
+    <!--Articulo-->
+    <section class="articulos justify-content-start">
+        <h2 class="seccion-titulo">Articulos</h2>
+        <div class="card">
+            <div class="card-header">
+              Más recientes
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 1 del Blog
+                    </li>
+                </a>
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 2 del Blog
+                    </li>
+                </a>
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 3 del Blog
+                    </li>
+                </a>
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 4 del Blog
+                    </li>
+                </a>
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 5 del Blog
+                    </li>
+                </a>
+                <a href="./paginas/blog.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Nombre de articulo 6 del Blog
+                    </li>
+                </a>
+            </ul>
+          </div>
+          <div class="boton-ver-mas">
+            <a class="btn" href="./paginas/blog.html" role="button">
+                Ver más
+                <i class="bi bi-arrow-right icono-boton"></i>
+            </a>
+        </div> 
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de nuestros alumnos...</h3>
+        
+        <!-- Carrusel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo usuario.jpg" alt="Foto de Carla">
+                <p class="testimonio-texto">“Llevo 6 meses practicando yoga con Sofi y la experiencia es muy gratificante. Después de meses de práctica me noto más relajado, más flexible y me tomo la vida de una manera más pausada. Sofi como profesora es estupenda y sus clases son muy amenas. Me siento muy bien.”</p>
+                <div class="testimonio-info">
+                    <p class="cliente">Carla</p>
+                    <p class="cargo">Alumna de Agara</p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo usuario 2.jpg" alt="Foto de Matias">
+                <p class="testimonio-texto">“Llevo dos semanas en yoga con Coti, y la verdad que estoy muy contenta con la experiencia. La atención al alumno es perfecta y las dinámicas de las clases están muy bien”</p>
+                <div class="testimonio-info">
+                    <p class="cliente">Matias</p>
+                    <p class="cargo">Alumno de Agara</p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo-usuario3.jpg" alt="Foto de Antonela">
+                <p class="testimonio-texto">“Marian es una excelente profesora y comprometida con sus alumnos, se preocupa porque la práctica de yoga se vaya modificando en función de las limitaciones de cada persona si tiene alguna lesión, y te ayuda en todo lo que pueda”.</p>
+                <div class="testimonio-info">
+                    <p class="cliente">Antonela</p>
+                    <p class="cargo">Alumna de Agara</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+<!--Contacto-->
+<section class="contacto seccion-color">
+    <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                    ¡Hablemos!
+                </div>
+                <div class="col-12 col-md-4 descripcion">
+                    Contactanos para empezar a tomar clases con nosotras y cambia tu estilo de vida
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:yaninavaneaquino@gmail.com">
+                        <button class="button-contacto" type="button">
+                            Contacto
+                            <i class="bi bi-envelope icon-contacto"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="./recursos/logo/Logo Agara-horizontal.png" alt="logo de agara">
+        <p class="footer-texto text-center">Conecta con tu cuerpo y alma <br> Confia en nuestras maestras</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <!--Instagram-->
+            <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <!--Whatsapp-->
+            <a href="https://wa.link/imn7mi" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <!--Correo-->
+            <a href="mailto:yaninavaneaquino@gmail.com" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Yanina Aquino (2023) &#169;</div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
